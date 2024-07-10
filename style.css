@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Montserrat;
+    background-color: #333;
+}
+.navigation{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: transparent;
+    border-top: #252525 solid 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigationBtn{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000057;
+    margin: 5px;
+    cursor: pointer;
+}
+.mainTime{
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hiContainer{
+    width: 800px;
+    height: 150px;
+    background-color: transparent;
+    margin-top: 30px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.time{
+    width: 500px;
+    height: 200px;
+    color: white;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 110px;
+}
+.first, .second, .thirt{
+    width: 166px;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-weight: 600;
+}
+.stopWatchClass{
+    width: 170px;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.stopWatchTime{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: none;
+    transition: 1s;
+    flex-direction: column;
+    align-items: center;
+}
+.screen{
+    width: 800px;
+    height: 150px;
+    background-color: transparent;
+    margin: 50px;
+    color: white;
+    font-size: 120px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+.stopWatchBtn{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 1s;
+    border: none;
+    cursor: pointer;
+}
