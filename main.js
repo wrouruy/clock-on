@@ -1,3 +1,4 @@
+// start menu with o'clock
 function mainTime() {
     let now = new Date();
     let hours = now.getHours();
@@ -32,8 +33,9 @@ function mainTime() {
 setInterval(mainTime, 1000);
 mainTime();
 
-let changeNum = 10
 
+// stop-watch
+let changeNum = 10
 let miliS_StopWatch = 0
 let secondStopWatch = 0
 let minuteStopWatch = 0
@@ -69,8 +71,6 @@ function stopwatch(){
 }
 let intervalId = setInterval(stopwatch, changeNum);
 stopwatch()
-
-
 let chLet = true
 clearInterval(intervalId);
 changeNum = Infinity;
@@ -108,11 +108,13 @@ $('#resetStopWatch').click(function() {
     $('#fourStopWatch').text('00')
 })
 
+
+// navigation
 $('#toMain').click(function() {
-    $('.mainTime').css('display', 'flex')
-    $('.stopWatchTime').css('display', 'none')
+    $('.mainTime').css('left', '0%')
+    $('.stopWatchTime').css('left', '100%')
 })
 $('#toStopWatch').click(function() {
-    $('.mainTime').css('display', 'none')
-    $('.stopWatchTime').css('display', 'flex')
+    $('.mainTime').css('left', '-100%')
+    $('.stopWatchTime').css('left', '0%')
 })
